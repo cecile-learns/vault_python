@@ -21,24 +21,24 @@ sns.heatmap(cor, annot = True)
 
 ## Paramètres courants
 
-| Paramètre | Description |
-|---|---|
-| `data` | Matrice 2D ou DataFrame rectangulaire. |
-| `vmin / vmax` | Bornes de l’échelle de couleurs. |
-| `cmap` | Palette continue ou divergente. |
-| `center` | Valeur centrale d’une palette divergente. |
-| `robust` | Calcule des bornes robustes avec des quantiles si `True`. |
-| `annot` | Affiche une valeur ou une matrice d’annotations dans les cellules. |
-| `fmt` | Format des annotations, par exemple `'.2f'`. |
-| `annot_kws` | Style du texte des annotations. |
-| `linewidths` | Épaisseur des séparations entre cellules. |
-| `linecolor` | Couleur des séparations. |
-| `cbar` | Affiche la barre de couleurs. |
-| `cbar_kws` | Réglages de la barre de couleurs. |
-| `square` | Rend les cellules carrées si `True`. |
-| `mask` | Masque booléen des cellules à cacher. |
-| `xticklabels / yticklabels` | Affichage ou espacement des libellés. |
-| `ax` | Axes Matplotlib existant. |
+| Paramètre                   | Description                                                        |
+| --------------------------- | ------------------------------------------------------------------ |
+| `data`                      | Matrice 2D ou DataFrame rectangulaire.                             |
+| `vmin / vmax`               | Bornes de l’échelle de couleurs.                                   |
+| `cmap`                      | Palette continue ou divergente.                                    |
+| `center`                    | Valeur centrale d’une palette divergente.                          |
+| `robust`                    | Calcule des bornes robustes avec des quantiles si `True`.          |
+| `annot`                     | Affiche une valeur ou une matrice d’annotations dans les cellules. |
+| `fmt`                       | Format des annotations, par exemple `'.2f'`.                       |
+| `annot_kws`                 | Style du texte des annotations.                                    |
+| `linewidths`                | Épaisseur des séparations entre cellules.                          |
+| `linecolor`                 | Couleur des séparations.                                           |
+| `cbar`                      | Affiche la barre de couleurs.                                      |
+| `cbar_kws`                  | Réglages de la barre de couleurs.                                  |
+| `square`                    | Rend les cellules carrées si `True`.                               |
+| `mask`                      | Masque booléen des cellules à cacher.                              |
+| `xticklabels / yticklabels` | Affichage ou espacement des libellés.                              |
+| `ax`                        | Axes Matplotlib existant.                                          |
 
 ## Fonction
 
@@ -54,9 +54,9 @@ Fonction de niveau Axes : elle renvoie l’`Axes` contenant la matrice colorée.
 
 [Seaborn — `heatmap`](https://seaborn.pydata.org/generated/seaborn.heatmap.html)
 
-|Besoin|`cmap` utiles|Quand|
-|---|---|---|
-|Valeurs faibles → fortes|`'viridis'`, `'Blues'`|variable quantitative avec progression|
-|Valeurs autour d'un centre|`'coolwarm'`, `'RdBu'`, `'vlag'`|valeurs négatives ↔ positives, **corrélations**|
-|Intensité simple|`'Greens'`, `'Oranges'`, `'Reds'`|comptages, intensités positives|
-|Ordre inversé|`'viridis_r'`, `'Blues_r'`|suffixe `_r` inverse la palette|
+| Besoin                     | `cmap` utiles                     | Quand                                           |
+| -------------------------- | --------------------------------- | ----------------------------------------------- |
+| Valeurs faibles → fortes   | `'viridis'`, `'Blues'`            | variable quantitative avec progression          |
+| Valeurs autour d'un centre | `'coolwarm'`, `'RdBu'`, `'vlag'`  | valeurs négatives ↔ positives, **corrélations** |
+| Intensité simple           | `'Greens'`, `'Oranges'`, `'Reds'` | comptages, intensités positives                 |
+| Ordre inversé              | `'viridis_r'`, `'Blues_r'`        | suffixe `_r` inverse la palette                 |
