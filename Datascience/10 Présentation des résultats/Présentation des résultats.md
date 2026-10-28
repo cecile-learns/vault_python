@@ -1,5 +1,0 @@
-# Présentation des résultats
-
-## Navigation
-
-

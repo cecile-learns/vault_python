@@ -1,3 +1,0 @@
-# Présentation des résultats
-
-## Navigation
